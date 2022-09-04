@@ -1,13 +1,24 @@
 #============= property_contexts ==============
 # Camera
-persist.camera.            u:object_r:camera_prop:s0
-persist.vendor.camera.dbglog			u:object_r:camera_prop:s0
+camera.						u:object_r:camera_prop:s0
+persist.cam.					u:object_r:camera_prop:s0
+persist.camera.					u:object_r:camera_prop:s0
+persist.vendor.camera.				u:object_r:camera_prop:s0
+ro.camera.					u:object_r:camera_prop:s0
+persist.enable.max.pending.buf			u:object_r:camera_prop:s0
+cameradaemon.SaveMemAtBoot			u:object_r:camera_prop:s0
+persist.partial.skip				u:object_r:camera_prop:s0
+disable.cpp.power.collapse			u:object_r:camera_prop:s0
+cpp.set.clock					u:object_r:camera_prop:s0
+
+ro.product.wt.boardid				u:object_r:vendor_boardid_prop:s0
 
 # Fingerprint
 sys.fp.goodix					u:object_r:vendor_fingerprint_prop:s0
 sys.fp.vendor					u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.sys.fp.				u:object_r:vendor_fingerprint_prop:s0
 persist.sys.fp.					u:object_r:vendor_fingerprint_prop:s0
+gf.debug.dump_data				u:object_r:vendor_fingerprint_prop:s0
 
 # Perf
 vendor.target.init.complete			u:object_r:vendor_mpctl_prop:s0

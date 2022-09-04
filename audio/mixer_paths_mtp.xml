@@ -56,7 +56,7 @@
     <ctl name="COMP0 RX2" value="0" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="81" />
+    <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="IIR1 INP1 Volume" value="53" />
     <ctl name="IIR1 INP2 Volume" value="53" />
     <ctl name="IIR1 INP3 Volume" value="53" />
@@ -1356,14 +1356,6 @@
         <path name="audio-playback-voip" />
     </path>
 
-    <!-- VoIP Tx settings -->
-    <path name="audio-record-voip">
-        <ctl name="MultiMedia10 Mixer TERT_MI2S_TX" value="1" />
-    </path>
-
-    <path name="audio-record-voip bt-sco">
-        <ctl name="MultiMedia10 Mixer INTERNAL_BT_SCO_TX" value="1" />
-    </path>
     <!-- VoIP Tx settings -->
     <path name="audio-record-voip">
         <ctl name="MultiMedia10 Mixer TERT_MI2S_TX" value="1" />
