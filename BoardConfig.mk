@@ -92,7 +92,6 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8953
 TARGET_NO_BOOTLOADER := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 
@@ -125,7 +124,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
-LOC_HIDL_VERSION := 3.0
+LOC_HIDL_VERSION := 4.0
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -137,6 +136,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/vintf/framework_manifest.xml
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
+
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -180,7 +182,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2022-12-05
+VENDOR_SECURITY_PATCH := 2023-02-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
