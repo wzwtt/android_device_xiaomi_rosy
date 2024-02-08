@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -132,7 +132,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE   := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
